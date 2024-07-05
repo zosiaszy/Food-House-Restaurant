@@ -1,0 +1,442 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  background-color: white;
+
+  
+
+}
+
+.navigation {
+    background:#631c1b;
+}
+
+
+.navbar {
+    padding: 15px;
+    color: #faf2e3;
+}
+
+.nav-link {
+    font-size: 25px;
+    color: #faf2e3;
+    letter-spacing: 2px;
+
+
+}
+
+.navbar-brand {
+    font-size: 32px;
+    letter-spacing: 2px;;
+    color: #faf2e3;
+ 
+  
+}
+
+
+
+.image {
+    object-fit: cover;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav {
+    margin-left: 70%;
+}
+
+a {
+    color: #faf2e3;
+}
+
+.nav-link:hover {
+    color: #f6dfb3;
+}
+
+.navbar-brand:hover {
+    color: #f6dfb3;
+}
+
+
+ .footer h3{
+    color: #631c1b;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer {
+   
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  
+    height: 60px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 20px;  
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #631c1b;
+}
+
+.card-text{
+    text-align: justify;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.about-us{
+    padding: 10px;
+}
+
+.offer{
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+
+.carousel-opinion {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    &-img {
+      height: 193px;
+      width: 193px;
+      object-fit: cover;
+    }
+    &-texts {
+      display: flex;
+      flex-direction: column;
+      width: 312px;
+      padding-left: 34px;
+      
+    
+      font-size: 14px;
+  
+      &-title {
+        margin-top: 15px;
+        text-transform: uppercase;
+        padding: 20px;
+      
+      }
+  
+      &-description {
+       
+        line-height: 23px;
+        margin: 0;
+     
+      }
+  
+      &-signature {
+        font-style: italic;
+     
+      }
+    }
+  }
+
+  .carousel-opinion-img {
+
+    width: 40%;
+    height: 40%;
+    display: flex;
+  }
+
+  .carousel-opinion p {
+    margin-left: 25px;
+  
+  }
+
+  .carousel-opinion-texts-title{
+    padding: 25px;
+    color: #631c1b;
+  }
+
+  .offer {
+    color: #631c1b;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-color: #631c1b;
+  }
+
+.layer{
+  cursor: pointer;
+}
+
+  .layer::before {
+    color: grey;
+    opacity: 0%;
+     z-index: 2;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    opacity: 100%;
+  }
+
+  .layer:hover{
+    opacity: 60%;
+  }
+
+  .button-card{
+    z-index: 2;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    opacity: 100%;
+    
+  }
+
+  .order-table {
+    padding: 25px;
+    margin-top: 90px;
+    margin-bottom: -20px;
+  
+   
+ 
+    width: 500px;
+    height: 670px;
+    font-size: 22px;
+   
+   
+  }
+
+
+
+.btn-primary {
+  background-color: #631c1b;
+  border-style: none;
+  color: white;
+  padding: 10px;
+  width: 150px;
+}
+
+.btn-primary:hover {
+  background-color: grey;
+}
+
+.btn-primary:active {
+  background-color: grey;
+}
+
+.btn:first-child:active {
+  background-color: grey;
+}
+.form-check-input:checked{
+  background-color: #631c1b;
+  border-color: white;
+}
+
+.col-form-label{
+  color: #631c1b;
+}
+
+ .form-control:focus {
+ 
+ 
+   border-color: #631c1b;
+   border-width: 2px;
+  outline: 0;
+  box-shadow: none; 
+ }
+
+ .form-control {
+  height: 40px;
+ }
+
+
+
+
+ .accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+ .accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion .container.active .content {
+  height: 350px;
+  color: black;
+}
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 30px;
+}
+
+.accordion {
+  width: 800px;
+  margin: 20px auto;
+  color: black;
+  background-color: white;
+  padding: 45px 45px;
+}
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+.menu {
+  justify-content: center;
+  text-align: center;
+}
+
+span {
+
+  color: #631c1b;
+  font-style: italic;
+  font-weight: bolder;
+
+}
+
+
+
+.image-us{
+  
+
+   overflow:hidden;
+   height: 30vh;
+   width: 270vh;
+   padding: 10px;
+}
+  
+.image{
+  align-items:flex-start;
+  
+}
+
+.image p {
+  padding: 20px;
+  text-align: justify;
+  margin-left: -30px;
+  margin-top: -20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.box{
+  justify-content:center;
+
+}
+
+.contact-img{
+  width: 1300px;
+}
+
+
+.navbar-toggler {
+  
+   color:#faf2e3;
+    background-color: white;
+  
+   
+}
+
+
+
+@media (max-width: 734px) {
+   
+  .contact-img{
+    width: 100%;
+  }
+
+  .image-us{
+   overflow:hidden;
+  }
+
+  .accordion {
+  width: 100%;
+  
+  color: black;
+  background-color: white;
+  padding: 25px 25px;
+}
+
+.footer {
+   
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+   
+}
+
+ .footer h3{
+    
+    justify-content: center;
+    left: 10%;
+    position: absolute;
+  
+}
+
+.about-us {
+  width: 100%;
+}
+
+.carousel-opinion-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+  
+
+}
